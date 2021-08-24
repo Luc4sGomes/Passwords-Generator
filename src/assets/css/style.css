@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 :root {
   --primary-color: #f5d020;
-  --primary-color-darker: #f53803;
+  --primary-color-darker: #f53802;
 }
 
 * {
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5d020;
-  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53802 74%);
   background-repeat: no-repeat;
   height: 100vh;
   font-family: "Open sans", sans-serif;
@@ -29,48 +29,20 @@ body {
   border-radius: 10px;
 }
 
-form input,
-form label,
-form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
-}
-
-.container h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.cpf-gerado {
+.senha-gerada{
   font-size: 2em;
-  color: var(--primary-color);
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 40px;
+  color: var(--primary-color-darker);
+  margin: 40px 0;
 }
+
+input[type="checkbox"]{
+  width: 25px;
+  height: 25px;
+}
+
+button{
+  display: block;
+  margin: 40px 0;
+  font-size: 1em;
+}
+

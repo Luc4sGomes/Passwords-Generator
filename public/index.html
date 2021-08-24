@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../src/assets/css/style.css" />
+    <title>Gerador de Senhas</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../src/assets/css/style.css">
-  <title>Gerador de CPF</title>
-</head>
+  <body>
+    <section class="container">
+      <h1>Gerador de senhas</h1>
 
-<body>
+      <div class="senha-gerada">Selecione as opções</div>
 
-  <section class="container">
-    <h1>Gerador de CPF</h1>
-    <div class="cpf-gerado"></div>
-  </section>
+      quantidade de caracteres<input type="number" min="1" max="50" /><br />
+      adicionar maiusculas<input
+        type="checkbox"
+        class="chk-maiusculas"
+        checked
+      /><br />
+      adicionar minusculas<input type="checkbox" class="chk-minusculas" /><br />
+      adicionar numeros<input type="checkbox" class="chk-numeros" /><br />
+      adicionar simbolos<input
+        type="checkbox"
+        class="chk-simbolos"
+        checked
+      /><br />
+      <button class="gerar-senha">Gerar senha</button>
+    </section>
 
-  <script src="./assets/js/bundle.js" type="module"></script>
-</body>
-
+    <script src="./assets/js/bundle.js" type="module"></script>
+  </body>
 </html>
