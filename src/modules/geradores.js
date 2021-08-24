@@ -15,7 +15,7 @@ const simbolos = ",.;~^[]!@#$%*()¨_+=-";
 const geraSimbolo = () => simbolos[rand(0, simbolos.length)];
 //gerando um simbolo random
 
-function gerSenha(quantidade, maiusculas, minusculas, numeros, simbolos) {
+export default function geraSenha(quantidade, maiusculas, minusculas, numeros, simbolos) {
   const senhaArray = [];
   quantidade = Number(quantidade);
 
@@ -27,6 +27,8 @@ function gerSenha(quantidade, maiusculas, minusculas, numeros, simbolos) {
     simbolos && senhaArray.push(geraSimbolo());
   }
 
-  console.log(senhaArray);
+  return senhaArray.join('').slice(0,quantidade);
+
 }
+geraSenha(5,true,true,true,true);
 
